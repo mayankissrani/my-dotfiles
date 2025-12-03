@@ -107,8 +107,25 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias cls="clear"
+alias runser="python manage.py runserver"
+alias updateit="sudo pacman -Syu"
+alias acvenv="source .venv/bin/activate"
+alias warpc="warp-cli connect"
+alias warps="warp-cli status"
+alias warpdc="warp-cli disconnect"
+alias netres="sudo systemctl restart NetworkManager"
+alias hotsup="nmcli connection up Hotspot"
+alias hotsdown="nmcli connection down Hotspot"
+alias kittyimg="kitty +kitten icat"
 
 
 
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Created by `pipx` on 2025-11-01 18:31:20
+export PATH="$PATH:/home/animus/.local/bin"
